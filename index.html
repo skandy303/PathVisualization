@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PathVisualizer</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="navbarDiv">
+		<ul style="  display: flex;
+    justify-content: space-evenly;
+    align-items: center;">
+			<li><a id="algos">Algorithms &#x25BE</a>
+				<ul>
+					<li class='searches' id="bfs"><a>Breadth-First</a></li>
+					<li class='searches' id="bi-bfs"><a>Bi-Directional</a></li>
+					<li class='searches' id="dfs"><a>Depth-First</a></li>
+				</ul>
+			</li>
+			<li><a id="speed">Speed &#x25BE</a>
+				<ul>
+					<li id="lightning-fast"><a>Lightning Fast</a></li>
+					<li id="fast"><a>Fast</a></li>
+					<li id="medium"><a>Medium</a></li>
+					<li id="slow"><a>Slow</a></li>
+				</ul>
+			</li>
+			<li id="clear"><a>Clear</a></li>
+			<li id="run"><a>Visualize</a></li>
+		</ul>
+	</div>
+
+	<section>Click on the grid to highlight the start node and double click on the grid to highlight an end node. Then select
+		an algorithm and speed from the navbar and when you are ready click the visualize button to see the algorithm in action!</section>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js">
+
+	</script>
+	<script src="script.js">
+
+	</script>
+	<table id="legend" style="margin-top:2rem">
+		<tr>
+			<td>Start Node
+			</td>
+			<td>End Node
+			</td>
+			<td>Path
+			</td>
+			<td>Visited Nodes
+			</td>
+		</tr>
+		<tr>
+			<td style="margin:auto">
+				<div style="background-color:#3D9970; margin:auto"></div>
+			</td>
+			<td>
+				<div style="background-color:#FF4135"></div>
+			</td>
+			<td>
+				<div style="background-color:rgb(255, 254, 105)"></div>
+			</td>
+			<td>
+				<div style="background-color:rgba(0, 190, 218, 0.75)"></div>
+			</td>
+		</tr>
+	</table>
+</body>
+
+</html>
